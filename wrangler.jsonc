@@ -1,12 +1,11 @@
 {
-  "name": "juice-shop",
+  "name": "juice-cf",
   "main": "index.js",
   "compatibility_date": "2026-09-01",
-   "containers": [
-     {
-       "name": "juice-shop-app",
-       "class_name": "JuiceShop",
-       "image": "docker.io/bkimminich/juice-shop:v19.0.0",
+  "containers": [
+    {
+      "class_name": "JuiceShop",
+      "image": "docker.io/bkimminich/juice-shop:v19.0.0",
       "instance_type": "basic",
       "max_instances": 1
     }
