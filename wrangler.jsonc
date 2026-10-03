@@ -5,7 +5,7 @@
   "containers": [
     {
       "class_name": "JuiceShop",
-      "image": "docker.io/bkimminich/juice-shop:latest",
+     "image": "docker.io/bkimminich/juice-shop:v19.0.0",
       "instance_type": "basic",
       "max_instances": 1
     }
