@@ -6,7 +6,10 @@ export class JuiceShop extends Container {
 }
 
 export default {
-  async fetch(request, env) {
-    return getContainer(env.JUICE).fetch(request);
-  },
+   async fetch(request, env) {
+     if (new URL(request.url).pathname === "/.well-known/sekura-verify.txt") {
+       return new Response("PASTE-YOUR-TOKEN-HERE");
+     }
+     return getContainer(env.JUICE).fetch(request);
+   },
 };
