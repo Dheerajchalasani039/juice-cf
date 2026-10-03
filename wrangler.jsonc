@@ -1,0 +1,18 @@
+{
+  "name": "juice-shop",
+  "main": "index.js",
+  "compatibility_date": "2026-09-01",
+  "containers": [
+    {
+      "class_name": "JuiceShop",
+      "image": "docker.io/bkimminich/juice-shop:latest",
+      "instance_type": "basic",
+      "max_instances": 1
+    }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "JUICE", "class_name": "JuiceShop" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["JuiceShop"] }],
+  "routes": [{ "pattern": "juice.YOUR-DOMAIN.com", "custom_domain": true }]
+}
