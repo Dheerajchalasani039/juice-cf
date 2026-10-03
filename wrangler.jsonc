@@ -14,6 +14,5 @@
   "durable_objects": {
     "bindings": [{ "name": "JUICE", "class_name": "JuiceShop" }]
   },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["JuiceShop"] }],
-  "routes": [{ "pattern": "juice.dheeraj.in", "custom_domain": true }]
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["JuiceShop"] }]
 }
